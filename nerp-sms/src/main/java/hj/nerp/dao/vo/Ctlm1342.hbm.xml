@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 18, 2014 3:49:55 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="hj.nerp.dao.vo.Ctlm1342" table="ctlm1342">
+        <id name="idSms" type="string">
+            <column name="id_sms" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="idCom" type="string">
+            <column name="id_com" length="20" />
+        </property>
+        <property name="idSend" type="string">
+            <column name="id_send" length="20" />
+        </property>
+        <property name="varMobile" type="string">
+            <column name="var_mobile" length="20" />
+        </property>
+        <property name="varContent" type="string">
+            <column name="var_content" length="2000" />
+        </property>
+        <property name="flagSend" type="char">
+            <column name="flag_send" length="1" />
+        </property>
+        <property name="dateSend" type="timestamp">
+            <column name="date_send" length="23" />
+        </property>
+        <property name="dateOpr" type="timestamp">
+            <column name="date_opr" length="23" />
+        </property>
+        <property name="idRecorder" type="string">
+            <column name="id_recorder" length="20" />
+        </property>
+        <property name="varMobilename" type="string">
+            <column name="var_mobilename" length="60" />
+        </property>
+        <property name="datePlansend" type="timestamp">
+            <column name="date_plansend" length="23" />
+        </property>
+        <property name="dateLastsend" type="timestamp">
+            <column name="date_lastsend" length="23" />
+        </property>
+        <property name="varErrmsg" type="string">
+            <column name="var_errmsg" />
+        </property>
+    </class>
+</hibernate-mapping>
